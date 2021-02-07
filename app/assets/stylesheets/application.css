@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px;
+}
+
+.top {
+  margin: 40px;
+}
+
+.top-1 {
+  margin: 20px 0px 20px 0px;
+}
+
+.top-2 {
+  display: flex;
+}
+
+.headding {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.head-title {
+  width: 200px;
+}
+
+.head-body {
+  width: 400px;
+}
+
+.main {
+  display: flex;
+  margin-top: 20px;
+}
+
+.main-title {
+  width: 200px;
+}
+
+.main-body {
+  width: 400px;
+  margin: 0px 20px 0px 20px;
+}
+
+.new-book {
+  margin: 20px 0px 20px 0px;
+}
+
+.show-1 {
+  display: flex;
+  margin-left: 40px;
+}
+
+.show-2 {
+  display: flex;
+  margin: 40px 0px 40px 40px;
+}
+
+.show-3 {
+  display: flex;
+}
+
+.show-4 {
+  margin: 0px 5px 0px 5px;
+}
+
+.edit-1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.edit-2 {
+  margin: 20px 0px 20px 0px;
+}
+
+.edit-3 {
+  display: flex;
+}
+
+.edit-4 {
+  margin: 0px 5px 0px 5px;
+}

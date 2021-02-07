@@ -1,0 +1,32 @@
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+
+<%= form_with model:@book, local:true do |f| %>
+  <% if @book.errors.any? %>
+    <h3>入力した内容にerrorが<%= @book.errors.count %>件あります</h3>
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>  
+  <% end %>
+<% end %>
+
+<h1>Editing Book</h1>
+<%= form_with model:@book, local:true do |f| %>
+<div class="edit-1">
+  <p>Title</p>
+  <%= f.text_field :title %>
+</div>  
+<p>Body</p>
+  <%= f.text_area :body %>
+<div class="edit-2">  
+  <%= f.submit 'Update Book' %>
+</div>
+<% end %>
+<div class="edit-3">
+<%= link_to "show", book_path(@book.id) %>
+<h5 class="edit-4">|</h5>
+<%= link_to "back", books_path %>
+</div>
